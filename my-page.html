@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathCloud Web Designers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            animation: slideInDown 10s ease-out infinite 10s;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+           h1 {
+             color: green; 
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #4CAF50;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 10s ease-out infinite 20s;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: textPopUp 10s ease-out infinite 10s;
+        }
+        .services {
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        .services h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            animation: slideInLeft 10s ease-out infinite 20s;
+        }
+        .services .service-item {
+            margin: 1rem 0;
+            animation: fadeInUp 10s ease-out infinite 200s;
+        }
+        .services .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .services .service-item p {
+            font-size: 1rem;
+            background: #4CAF50;
+            color: #fff;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            animation: pulse 10s infinite 20s;
+        }
+        .contact {
+            background: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-bottom: 1rem;
+            animation: slideInRight 10s ease-out infinite 20s;
+        }
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact a:hover {
+            color: #fff;
+        }
+        footer {
+            background: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            animation: fadeIn 5s ease-out infinite 10s;
+        }
+
+        /* Animations */
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes textPopUp {
+            0%, 100% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0%, 100% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 rgba(76, 175, 80, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MathCloud Web Designers</h1>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section class="hero">
+        <h1>Creating Stunning Websites for Your Success</h1>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Custom Website Design</h3>
+            <p>Beautiful, tailor-made websites that fit your brand perfectly.</p>
+        </div>
+        <div class="service-item">
+            <h3>Responsive Design</h3>
+            <p>Websites that look great on all devices, from desktops to mobiles.</p>
+        </div>
+        <div class="service-item">
+            <h3>E-commerce Solutions</h3>
+            <p>Powerful and easy-to-manage online stores to boost your sales.</p>
+        </div>
+        <div class="service-item">
+            <h3>SEO Optimization</h3>
+            <p>Improve your search engine ranking and get discovered by more customers.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to start your project? Get in touch with us today!</p>
+        <p><a href="mailto:marshall12340@gmail.com">info@mathcloudwebdesign.com</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 MathCloud Web Designers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
